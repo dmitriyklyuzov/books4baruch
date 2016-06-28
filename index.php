@@ -1,8 +1,8 @@
 <?php 
 session_start();
 
-include_once 'view/parts/head.part.php';
-include_once 'view/parts/navbar.part.php';
+include_once 'views/parts/head.part.php';
+include_once 'views/parts/navbar.part.php';
 ?>
 
 <!DOCTYPE html>
@@ -13,14 +13,14 @@ include_once 'view/parts/navbar.part.php';
 		<?php getHead('Books4Baruch'); ?>
 	</head>
 
-	<body >
+	<body id="index-body">
 
 		<?php getNavbar(); ?>
 
 		<br>
 
 		<div class="container index-search-container">
-			<div class="jumbotron">
+			<div class="jumbotron index-jumbotron">
 				<h1 class="text-align-center">Books4Baruch</h1>
 				<br>
 				<form class="search_form" id="index_search_form" method="GET" action="results.php">			

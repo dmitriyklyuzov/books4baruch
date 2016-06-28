@@ -2,6 +2,9 @@
 
 session_start();
 
+include_once 'views/parts/head.part.php';
+include_once 'views/parts/navbar.part.php';
+
 $test_mode=false;
 
 $listingId='';
@@ -26,42 +29,26 @@ if(isset($_GET['listing_id'])){
 	}
 
 	include 'controller/dataconnect_movedb.php';
-?>
 
-<!DOCTYPE html>
-<head>
-	
-	<title>Details - Books4Baruch</title>
-
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-
-	<link rel="stylesheet" href="bootstrap-3.3.6-dist/css/bootstrap.min.css">
-	<link href="css/bootstrap-responsive.css" rel="stylesheet">
-	<link href="css/newstylesheet.css" rel="stylesheet">
-  	
-  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
-	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-	<script charset="utf-8"></script>
-
-</head>
-<html lang="en">
-	<body >
-
-		<?php 
-
-		include 'navbar.php'; 
-
-		$resultSet = $mysqli -> query("SELECT book_title, book_author, book_ISBN,
+	$resultSet = $mysqli -> query("SELECT book_title, book_author, book_ISBN,
 										book_edition, listing_condition, price, first_name,
 										student_email, phone_number, description, listing_id
 										FROM book_info 
 										INNER JOIN listing ON book_info.book_ISBN=listing.ISBN
 										INNER JOIN student on listing.student_email=student.email
 										WHERE listing_id = '" .$listingId."';");
-		?>
 
+	
+?>
 
+<!DOCTYPE html>
+<head>
+	<?php getHead('Details'); ?>
+</head>
+<html lang="en">
+	<body >
+
+		<?php getNavbar(); ?>
 
 		<br>
 
@@ -73,11 +60,6 @@ if(isset($_GET['listing_id'])){
 				
 			$row_count = $resultSet -> num_rows;
 			// include 'controller/ordinalFormatter.php';
-
-			if($test_mode){
-				//print how many rows were found for the keyword entered
-				echo "<p>$row_count results found</p>";
-			}
 
 			//Turn the results into an array
 			while($rows = $resultSet -> fetch_assoc())

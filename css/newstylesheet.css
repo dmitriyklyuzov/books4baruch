@@ -3,14 +3,33 @@ html, body {
     overflow-x: hidden;
 }
 
+#index-body{
+	background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("../img/backgrounds/book1.jpg") 50% 50% fixed;
+	background-size: cover;
+}
+
+#body-404{
+	background: url("../img/backgrounds/twoway.jpg") 50% 50% fixed;
+	background-size: cover;
+}
+
 .jumbotron{
-	background-color: #fff;
+	background-color: transparent;
 }
 
 h1 {
   /*font: 400 95px/1.6 'Pacifico', Georgia, serif;*/
   /*font: 400 95px/1.6 'Poiret One', cursive;*/
 }
+
+.index-jumbotron{
+	background-color: transparent;
+}
+
+.index-jumbotron h1{
+	color: #fff;
+}
+
 
 
 /* NAVBAR */
@@ -118,4 +137,8 @@ h1 {
 
 .form-group{
 	/*padding: 1em;*/
+}
+
+.color-white{
+	color: #fff;
 }
