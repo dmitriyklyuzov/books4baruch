@@ -1,0 +1,164 @@
+<?php 
+session_start();
+?>
+
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<title>Home | Books4Baruch</title>
+<?php
+include "head.php"
+?>
+</head>
+<body>
+
+<?php 
+
+include "controller/navigationBar.php";
+
+?>
+
+</br>
+</br>
+</br>
+</br>
+<div id="top"></div>
+<div id="headerwrap">
+  <header class="clearfix">
+    <center><h1>Welcome to Books4Baruch!</h1></center>
+    <div class="container">
+      <div class="row">
+        <div class="span12">
+        </br>
+          <center><h2>Search Now!</h2>
+          <!-- <input type="text" name="title-author-isb" placeholder="Book Title, Author, or ISBN" class="cform-text" size="40" title="title-author-isbn">
+          <!-- <input type="submit" value="Search" onClick="document.location.href='results.php'" > Testing out Search -->
+        <form method = "POST" action="results.php">
+            <input name="searchbox" id="searchbox" class="searchbox" placeholder="Book Title, Author or ISBN" type="text" style="margin: 0; width: 50%; height: 25px"; />
+		<input type="submit" name="Submit" value="Search" style="margin: 0; width: 160px; height: 33px";/>
+            </form>
+            </center>
+        </div>
+      </div>
+      <div class="row">
+        <div class="span12">
+
+        </div>
+      </div>
+    </div>
+  </header>
+</div>
+<!-- <hr>
+<section id="portfolio" class="single-page scrollblock">
+  <div class="container">
+    <div class="align"><i class="icon-desktop-circled"></i></div>
+    <h1 id="folio-headline">Objectives...</h1>
+    <div class="row">
+      <div class="span4">
+        <div class="mask2"> <a href="img/portfolio-01.jpg" rel="prettyPhoto"><img src="img/portfolio-01.jpg" alt=""></a> </div>
+        <div class="inside">
+          <hgroup>
+           <h2>Our Mission</h2>
+          </hgroup>
+          <div class="entry-content">
+            <p>Our Mission is to deliver a platform for buying, selling, and trading textbooks for Baruch College Students.</p>
+            </div>
+        </div>
+      </div>
+      <div class="span4">
+        <div class="mask2"> <a href="img/portfolio-02.jpg" rel="prettyPhoto"><img src="img/portfolio-02.jpg" alt=""></a></div>
+        <div class="inside">
+          <hgroup>
+            <h2>More Books!</h2>
+          </hgroup>
+          <div class="entry-content">
+            <p>Our platform will allow more custom-baruch textbooks to be circulated throughout the school. Meaning the bookstore will no longer be the only player!.</p>
+            </div>
+        </div>
+      </div>
+      <div class="span4">
+        <div class="mask2"> <a href="img/portfolio-03.jpg" rel="prettyPhoto"><img src="img/portfolio-03.jpg" alt=""></a></div>
+        <div class="inside">
+          <hgroup>
+            <h2>Free as in Freedom!</h2>
+          </hgroup>
+          <div class="entry-content">
+            <p>What seperates us from the competition is that our service is completely free of charge.</p>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->
+<hr>
+<section id="services" class="single-page scrollblock">
+  <div class="container">
+    <!-- <div class="align"><i class="icon-cog-circled"></i></div> -->
+    <center><h1>Services</h1></center>
+    <div class="row">
+      <div class="span3">
+        <div class="align"> </div>
+      </div>
+    </div>
+  </div>
+</section>
+<hr>
+<section id="team" class="single-page scrollblock">
+  <div class="container">
+    <!-- <div class="align"><i class="icon-group-circled"></i></div> -->
+    <center><h1>Meet the team</h1></center>
+    <div class="row" align="left">
+      <div class="span2">
+        <div align="left"> <img class="team-thumb img-circle" src="img/portrait-1.jpg" alt=""> </div>
+        <h3>Andrew</h3>
+        <div class="job-position">web designer</div>
+      </div>
+      <div class="span2">
+        <div class="teamalign"> <img class="team-thumb img-circle" src="img/portrait-2.jpg" alt=""> </div>
+        <h3>Stephen</h3>
+        <div class="job-position">web developer</div>
+      </div>
+      <div class="span2">
+        <div class="teamalign"> <img class="team-thumb img-circle" src="img/portrait-3.jpg" alt=""> </div>
+        <h3>Maria</h3>
+        <div class="job-position">graphic designer</div>
+      </div>
+      <div class="span2">
+        <div class="teamalign"> <img class="team-thumb img-circle" src="img/portrait-4.jpg" alt=""> </div>
+        <h3>John</h3>
+        <div class="job-position">project manager</div>
+      </div>
+      <div class="span2">
+        <div class="teamalign"> <img class="team-thumb img-circle" src="img/portrait-2.jpg" alt=""> </div>
+        <h3>Ashton</h3>
+        <div class="job-position">real owner</div>
+      </div>
+       <div class="span2">
+        <div class="teamalign"> <img class="team-thumb img-circle" src="img/portrait-4.jpg" alt=""> </div>
+        <h3>Admin</h3>
+        <div class="job-position">BOSS</div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="span10 offset1">
+        <hr class="featurette-divider">
+        <div class="featurette">
+          <h2 class="featurette-heading">Want to know more? <span class="muted">| a little about us</span></h2>
+          <p>Li Europan lingues es membres del sam familie. Lor separat existentie es un myth. Por scientie, musica, sport etc, litot Europa usa li sam vocabular. Li lingues differe solmen in li grammatica, li pronunciation e li plu commun vocabules. Omnicos directe al desirabilite de un nov lingua franca: On refusa continuar payar custosi traductores.</p>
+          <p>At solmen va esser necessi far uniform grammatica, pronunciation e plu sommun paroles. Ma quande lingues coalesce, li grammatica del resultant lingue es plu simplic e regulari quam ti del coalescent lingues.</p>
+          <p>A un Angleso it va semblar un simplificat Angles, quam un skeptic Cambridge amico dit me que Occidental es.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<hr>
+<div class="footer-wrapper">
+  <div class="container">
+    <footer> <small>&copy; 2016 Books4Baruch.com. All rights reserved.</small></footer></div>
+</div>
+<script src="js/bootstrap.js"></script>
+<script src="js/jquery.prettyPhoto.js"></script>
+<script src="js/site.js"></script>
+</body>
+</html>

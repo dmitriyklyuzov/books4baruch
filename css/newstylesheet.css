@@ -1,0 +1,121 @@
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.jumbotron{
+	background-color: #fff;
+}
+
+h1 {
+  /*font: 400 95px/1.6 'Pacifico', Georgia, serif;*/
+  /*font: 400 95px/1.6 'Poiret One', cursive;*/
+}
+
+
+/* NAVBAR */
+
+.navbar-inverse .navbar-nav > li > a {
+  color:white;
+}
+
+* {
+  -webkit-border-radius: 0 !important;
+     -moz-border-radius: 0 !important;
+          border-radius: 0 !important;
+}
+
+.navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:hover {
+	background-color: #0D333E;
+}
+
+/* BUTTONS */
+
+.btn-primary{
+	background-color: #f0bf00;
+	border-color: #f0bf00;
+}
+
+.btn-primary:hover{
+	background-color: #0D333E;
+	border-color: #0D333E;
+}
+
+/* OVERWRITING BOOTSTRAP */
+
+.padding-left-0 {
+	padding-left: 0px;
+}
+
+
+/* INPUTS */
+
+#inputEmail-error, #inputPassword-error{
+	padding-top:20px;
+	text-align: center;
+}
+
+/* SHORTCUTS */
+
+.text-align-center { text-align: center; }
+
+/* SHORTCUTS - MARGINS - TOP */
+
+.top5 { margin-top:5px; }
+.top6 { margin-top:6px; }
+.top7 { margin-top:7px; }
+.top8 { margin-top:8px; }
+.top9 { margin-top:9px; }
+.top10 { margin-top:10px; }
+.top15 { margin-top:15px; }
+.top17 { margin-top:17px; }
+.top20 { margin-top:20px; }
+.top25 { margin-top:25px; }
+.top30 { margin-top:30px; }
+
+/* SHORTCUTS - MARGINS - BOTTOM */
+
+.bottom5 { margin-bottom:5px; }
+.bottom6 { margin-bottom:6px; }
+.bottom7 { margin-bottom:7px; }
+.bottom8 { margin-bottom:8px; }
+.bottom9 { margin-bottom:9px; }
+.bottom10 { margin-bottom:10px; }
+.bottom15 { margin-bottom:15px; }
+.bottom17 { margin-bottom:17px; }
+.bottom20 { margin-bottom:20px; }
+.bottom25 { margin-bottom:25px; }
+.bottom30 { margin-bottom:30px; }
+
+/* COLORS */
+
+.background-color-blue{
+	background-color: #2786f3;
+}
+
+
+.color-orange{
+	color: #f0bf00;
+}
+
+.height20{
+	height: 20px;
+}
+
+.height30{
+	height: 30px;
+}
+
+.login-form-container{
+	/*margin-top: 10em;*/
+	max-width: 30em;
+	/*background-color: #fff;*/
+}
+
+.index-search-container{
+	max-width: 40em;
+}
+
+.form-group{
+	/*padding: 1em;*/
+}

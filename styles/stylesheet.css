@@ -1,0 +1,341 @@
+/*
+	.class
+	#id
+	
+*/
+
+ul {
+	list-style: none;
+}
+
+a{
+	text-decoration: none;
+	color:#000000;
+}
+
+a:visited{
+	color:#000000;
+}
+
+#details, #modify, #delete{
+	color:#0000ee;
+}
+
+@font-face {
+  font-family: 'Patua One';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Patua One'), local('PatuaOne-Regular'), url('fonts/yAXhog6uK3bd3OwBILv_SLO3LdcAZYWl9Si6vvxL-qU.woff') format('woff');
+}
+
+.jumbotron-main{
+	background:url("background_alt.JPG") no-repeat center center fixed;
+	min-height: 680px;
+ 	background-size: cover;
+ 	margin-bottom: 0px;
+}
+
+.auto-style1 {
+    text-align: center;
+
+}
+
+#navigation{
+	/*min-width: 100%;*/
+	/*display: block;*/
+}
+
+#nav_links{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	display: inline;
+}
+
+#nav_links li{
+	float:left;
+}
+
+#nav_links li a{
+	display: block;
+	text-align: center;
+	text-decoration: none;
+	color:000000;
+	padding: 14px 16px;
+}
+
+a:visited{
+	color:000000;
+}
+
+/*#nav_links li a:hover{
+	background-color: #111;
+}*/
+
+.search_form{
+	display: block;
+	/*margin: 0 auto;*/
+	/*clear: both;*/
+	/*position: absolute;*/
+	/*width:500px;*/
+	/*height: 50px;*/
+	top: 30%;
+	/*left:50%;*/
+	/*margin-left: -200px;*/
+
+}
+
+.searchbox{
+	margin: 0 auto;
+	display: block;
+	/*float: left;*/
+	/*clear:both;*/
+	/*position: absolute;*/
+	/*top: 30%;*/
+	/*left: 50%;*/
+	/*width:400px;*/
+	/*height: 50px;*/
+	/*margin-left: -200px;*/
+	font-size: 20px;
+	/*text-align: center;*/
+}
+
+#submit_btn{
+	/*margin: 0 auto;*/
+	/*display: block;*/
+	/*float: right;*/
+	/*text-align: center;*/
+	/*width:90px;*/
+	height: 30px;
+}
+
+.auto-style1 .list_label{
+	text-align: left;
+}
+
+.search_form input, #newListingDiv input[type=text],
+.login_form input[type=text], .login_form input[type=email], .login_form input[type=password], .login_form input[type=tel]
+{
+	font-size: 20px;
+	/*text-align: center;*/
+	width: 40%; 
+	height: 35px;
+	/*font-family: 'Patua One', cursive;*/
+}
+
+textarea{
+	font-size: 20px;
+	width: 40%;
+}
+
+input[type=submit]{
+	width: 160px;
+	height: 45px;
+	font-family: 'Patua One', cursive;
+	color: #fff;
+	/*width: 185px;
+		height: 2.9em;*/
+	font-size: 1.3125em;
+	/* 21px */
+	/*padding:0.5em;*/
+	letter-spacing: 0.05em;
+	margin: 0;
+	border: 0;
+	text-transform: none;
+	background: #f0bf00 !important;
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+}
+
+/* ---------------------------------------------------------------------------------------------------------- 
+04 Navbar ------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------- */
+
+.navbar-fixed-top .container {
+/* Uncomment to make nav expand full width */
+ /*	width: auto; */
+}
+.navbar .brand {
+	margin-left:0;
+	padding: 0;
+	margin-top: 1.05em;
+}
+.navbar .brand a {
+	padding: 0;
+	color: #fff;
+	font-size: 1.75em;
+	margin-left: 0;
+	font-weight: normal;
+	font-family: 'Patua One', cursive;
+}
+.navbar .brand a:hover {
+	text-decoration: none;
+	color:#f0bf00;
+ transition: color .15s linear;
+ -webkit-transition: color .15s linear;
+ -moz-transition: color .15s linear;
+}
+.navbar .brand a:focus {
+	outline: none;
+}
+.navbar-inner {
+	min-height: 4.75em;
+}
+.navbar-inverse .navbar-inner {
+	background-repeat: repeat;
+	background-color: #0b333f;
+	border-color: #f0bf00;
+}
+.navbar-wrapper {
+	overflow:hidden;/* No fixed height, will break collapsible nav */
+}
+#menu-main {
+	margin-top: 1.125em;
+}
+ul#menu-main > li > a {
+	font-family: 'Patua One', cursive;
+	font-weight: normal;
+	font-size: 1em;
+	color: #fff;
+}
+ul#menu-main > li > a:hover {
+	background: #f0bf00;
+	padding: 9px 15px;
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+}
+.navbar-inverse .brand, .navbar-inverse .nav > li > a {
+	text-shadow: none;
+
+/* ---------------------------------------------------------------------------------------------------------- 
+0  ------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------- */
+/*}
+section#team, section#contact {
+	color: #e4e5e2;
+	background:#312A1E;*/
+}
+
+.multi-line-header{
+	line-height: 100%;
+}
+section#team .align, section#contact .align {
+	font-size: 6em;
+	text-align: center;
+}
+#team h1, #contact h1 {
+	font-size: 3em;
+	margin-bottom: 1em;
+	margin-top: 0.5em;
+}
+#contact, #team {
+	padding-top: 4.75em;
+}
+#team {
+	padding-bottom: 0;
+}
+#contact {
+	padding-bottom: 0;
+}
+/* team */
+
+#team h3 {
+	font-size: 26px;
+	margin-top: 24px;
+	margin-bottom: 0px;
+}
+#team h3, .job-position {
+	text-align: center;
+}
+#team .featurette {
+	text-align: center;
+	font-size: 21px;
+}
+#team h2.featurette-heading {
+	margin-bottom: 24px;
+}
+.teamalign {
+	text-align:center
+}
+.team-thumb {
+	margin-top: 26px;
+	text-align:center;
+}
+.job-position {
+	font-family: 'Open Sans', sans-serif;
+	margin-bottom: .46155em;
+	/* ---------------------------------------------------------------------------------------------------------- 
+0  ------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------- */
+}
+#headerwrap {
+	width: 100%;
+	background: url(../img/top-bg.jpg) #0b333f no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	min-height: 600px;
+	margin-top: -60px;
+	padding-top:160px;
+	text-align:center;
+}
+#headerwrap h1 {
+	color: #FFFFFF;
+	font-family: 'Patua One', cursive;
+	font-size: 4em;
+	font-weight: 400;
+	margin: 1em 0;
+}
+#headerwrap h2 {
+	color: #FFFFFF;
+	font-family: 'Open Sans', sans serif;
+	font-size: 2em;
+	font-weight: normal;
+	margin: 0.5em 0;
+	text-shadow: 1px 1px 1px #333333;
+}
+#headerwrap h1 span {
+	color:#f0bf00;
+}
+/*#headerwrap input[type=text] {
+	background: rgba(227, 231, 228, 1);
+	font-family: 'Open Sans', sans serif;
+	font-size: 1.3125em;
+	border: 0;
+	text-align: center;
+	vertical-align: middle;
+	margin-bottom:0 !important;
+}
+#headerwrap input[type=text]:focus {
+	background: #43413e;
+	color: #eff1ef;
+	transition: background 0.25 ease-in;
+	-moz-transition: background 0.25 ease-in;
+	-webkit-transition: background 0.25 ease-in;
+}
+#headerwrap input[type=text] {
+	height: 2.9em;
+	width:50%;
+}
+/*/*#headerwrap input[type=submit], .login_form input[type=submit] {
+	font-family: 'Patua One', cursive;
+	color: #fff;
+	/*width: 185px;
+	height: 2.9em;*/
+	font-size: 1.3125em; /* 21px */
+	/*padding:0.5em;*/
+	letter-spacing: 0.05em;
+	margin: 0;
+	border: 0;
+	text-transform: none;
+	background: #f0bf00 !important;
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+}*/*/
+#headerwrap input[type=submit]:hover, #headerwrap input[type=submit]:active {
+	background: #43413e !important;
+}*/
